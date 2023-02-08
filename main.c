@@ -106,8 +106,9 @@ int main(int argc, const char * argv[]) {
   
   p=head;
   while(p!=NULL){
-      printf("%3d", p->value);
-      p=p->next;
+    printf("%3d->", p->value);
+    if(p->next==NULL) printf("NULL");
+    p=p->next;
   }
   printf("\n");
   
